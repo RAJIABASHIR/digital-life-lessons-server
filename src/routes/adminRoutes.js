@@ -34,7 +34,7 @@ router.delete("/lessons/:lessonId", deleteLessonAdmin);
 
 router.get("/reports", getReportedLessons);
 router.get("/reports/:lessonId", getLessonReports);
-router.patch("/reports/:lessonId/resolve", resolveLessonReports); // <-- new route
+router.patch("/reports/:lessonId/resolve", resolveLessonReports); 
 
 
 router.get("/profile", getAdminProfile);

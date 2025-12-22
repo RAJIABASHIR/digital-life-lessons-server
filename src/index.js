@@ -17,8 +17,9 @@ import { errorHandler } from "./middleware/errorHandler.js";
 dotenv.config();
 const app = express();
 
-const CLIENT_URL = process.env.CLIENT_URL || "https://digital-life-lessons-client.netlify.app";
+const CLIENT_URL = process.env.CLIENT_URL
 //"http://localhost:5173"
+//"https://digital-life-lessons-client.netlify.app"
 console.log("CORS allowing origin:", CLIENT_URL);
 
 app.use(
@@ -54,7 +55,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api", (req, res) => {
-  res.json("Root of Digital Life Lessons API" );
+  res.json("Root of Digital Life Lessons API");
 });
 
 
